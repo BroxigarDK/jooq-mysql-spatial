@@ -4,7 +4,7 @@
 
 package net.gquintana.jooq.mysql;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 import org.jooq.DataType;
 import org.jooq.Field;
 import org.jooq.Param;

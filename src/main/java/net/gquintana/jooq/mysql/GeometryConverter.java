@@ -3,17 +3,17 @@
  */
 package net.gquintana.jooq.mysql;
 
-import com.vividsolutions.jts.geom.CoordinateSequenceFactory;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.PrecisionModel;
-import com.vividsolutions.jts.geom.impl.CoordinateArraySequenceFactory;
-import com.vividsolutions.jts.io.ByteOrderValues;
-import com.vividsolutions.jts.io.InputStreamInStream;
-import com.vividsolutions.jts.io.OutputStreamOutStream;
-import com.vividsolutions.jts.io.ParseException;
-import com.vividsolutions.jts.io.WKBReader;
-import com.vividsolutions.jts.io.WKBWriter;
+import org.locationtech.jts.geom.CoordinateSequenceFactory;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.PrecisionModel;
+import org.locationtech.jts.geom.impl.CoordinateArraySequenceFactory;
+import org.locationtech.jts.io.ByteOrderValues;
+import org.locationtech.jts.io.InputStreamInStream;
+import org.locationtech.jts.io.OutputStreamOutStream;
+import org.locationtech.jts.io.ParseException;
+import org.locationtech.jts.io.WKBReader;
+import org.locationtech.jts.io.WKBWriter;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -136,7 +136,7 @@ public class GeometryConverter implements Converter<Object, Geometry> {
     /**
      * Manually register de {@link org.jooq.impl.ConvertedDataType} to avoid the dreaded
      * "org.jooq.exception.SQLDialectNotSupportedException: 
-     * Type class com.vividsolutions.jts.geom.Geometry is not supported in dialect SQL99"
+     * Type class org.locationtech.jts.geom.Geometry is not supported in dialect SQL99"
      * @return ConvertedDataType
      */
     public DataType<Geometry> registerDataType() {

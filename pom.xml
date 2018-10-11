@@ -30,9 +30,9 @@
             <version>${mysql.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.vividsolutions</groupId>
-            <artifactId>jts</artifactId>
-            <version>1.13</version>
+            <groupId>org.locationtech.jts</groupId>
+            <artifactId>jts-core</artifactId>
+            <version>1.16.0</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -95,7 +95,7 @@
                             <customTypes>
                                 <customType>
                                     <name>Geometry</name>
-                                    <type>com.vividsolutions.jts.geom.Geometry</type>
+                                    <type>org.locationtech.jts.geom.Geometry</type>
                                     <converter>net.gquintana.jooq.mysql.GeometryConverter</converter>
                                 </customType>
                             </customTypes>
